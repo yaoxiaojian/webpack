@@ -33,9 +33,7 @@ module.exports = (env) => {
     }
 
     return {
-        entry: {
-            app: "./app/js/main.js",
-        },
+        entry: ["./app/js/main.js", "./app/js/viewport.js"],
         devtool: "source-map",
         devServer: {
             contentBase: path.join(__dirname, "dist"),
